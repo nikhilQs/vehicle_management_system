@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Employee - M/S SP SINGH</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #001f3f, #0074D9);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      width: 400px;
+      margin: auto;
+    }
+    input[type="text"], input[type="number"], input[type="date"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add Employee</h2>
+  <form action="insert_employee.php" method="post">
+    <input type="text" name="name" placeholder="Full Name" required><br>
+    <input type="text" name="designation" placeholder="Designation" required><br>
+    <input type="number" name="salary" placeholder="Salary" required><br>
+    <input type="date" name="joining_date" required><br>
+    <input type="text" name="account_number" placeholder="Account Number" required><br>
+    <input type="text" name="bank_name" placeholder="Bank Name" required><br>
+    <input type="text" name="ifsc_code" placeholder="IFSC Code" required><br>
+    <input type="text" name="branch_address" placeholder="Branch Address" required><br>
+    <input type="submit" value="Add Employee">
+  </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Attendance - M/S SP SINGH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Mark Attendance</h2>
+  <form action="save-attendance.php" method="POST">
+    <label>Staff/Driver Name: <input type="text" name="name" required></label><br>
+    <label>Role: 
+      <select name="role" required>
+        <option value="">Select</option>
+        <option value="Driver">Driver</option>
+        <option value="Staff">Staff</option>
+      </select>
+    </label><br>
+    <label>Status: 
+      <select name="status" required>
+        <option value="">Select</option>
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+      </select>
+    </label><br>
+    <label>Date: <input type="date" name="date" required></label><br>
+    <button type="submit">Mark Attendance</button>
+  </form>
+</body>
+</html>

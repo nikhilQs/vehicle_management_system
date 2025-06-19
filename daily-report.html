@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Daily Vehicle Report</h2>
+  <form action="save-report.php" method="POST">
+    <label>Vehicle No: <input type="text" name="vehicleno" required></label><br>
+    <label>Driver Name: <input type="text" name="driver" required></label><br>
+    <label>Trips Today: <input type="number" name="trips" required></label><br>
+    <label>Earnings (₹): <input type="number" name="earnings" required></label><br>
+    <label>Fuel Used (litres): <input type="number" name="fuel" required></label><br>
+    <label>Date: <input type="date" name="report_date" required></label><br>
+    <button type="submit">Submit Report</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>M/S SP SINGH - Vehicle Management</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #001f3f, #0074D9); /* Gradient Background */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px;
+      background: #000;
+      margin-bottom: 40px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .left-buttons,
+    .right-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .button {
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to M/S SP SINGH</h1>
+
+  <div class="button-container">
+    <!-- Left Side Buttons -->
+    <div class="left-buttons">
+      <a href="add_vehicle.php" class="button">Add Vehicle</a>
+      <a href="attendance.php" class="button">Mark Attendance</a>
+      <a href="report.php" class="button">Daily Trip Report</a>
+      <a href="statistics.php" class="button">View Statistics</a>
+    </div>
+
+    <!-- Right Side Buttons -->
+    <div class="right-buttons">
+      <a href="about.php" class="button">About Us</a>
+      <a href="view_vehicles.php" class="button">View All Vehicles</a>
+      <a href="view_attendance.php" class="button">View Attendance</a>
+      <a href="view_reports.php" class="button">View Trip Reports</a>
+     <a href="add_employee.html" class="button">Add Employee</a>
+
+
+    </div>
+  </div>
+</body>
+</html>

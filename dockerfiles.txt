@@ -1,0 +1,17 @@
+# Use the official PHP image with Apache
+FROM php:8.2-apache
+
+# Install required PHP extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Enable Apache mod_rewrite for pretty URLs if needed
+RUN a2enmod rewrite
+
+# Copy your project files into the Apache document root
+COPY . /var/www/html/
+
+# Set correct permissions
+RUN chown -R www-data:www-data /var/www/html
+
+# Expose port 80
+EXPOSE 80
